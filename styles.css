@@ -1,0 +1,370 @@
+html{
+    height: 100%;
+}
+
+body{
+    position: relative;
+    margin: 0;
+    min-height:100%;
+}
+
+.titre {
+    text-align: center;
+    font-family: "Helvetica", sans-serif;
+    font-size: 40px;
+}
+
+.titre_site {
+    color:rgb(95, 165, 187);
+    text-align: left;
+    text-decoration: none;
+    font-family: "Helvetica", sans-serif;
+    font-size: 40px;
+    display:block;
+}
+
+.titre_site:visited {
+    color:rgb(95, 165, 187);
+}
+
+.description {
+    background-color: rgb(164, 182, 201);
+    color: rgb(241, 240, 233);
+    margin: 0 auto;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 25px;
+    width: 490px;
+    height: 30px;
+    padding: 14px;
+    display: block;
+}
+
+
+/*BOUTONS - LIENS HTML*/
+.bouton {
+    background-color: rgb(255, 255, 255);
+    color:rgb(12, 25, 99);
+    border: 1px solid #000;
+    font-size: 20px;
+    font-family: 'Tahoma', sans-serif;
+    font-weight: lighter ;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.bouton:hover {
+    background-color: rgb(231, 231, 231);
+    font-weight: bold;
+}
+
+.bouton:visited{
+    color:rgb(12, 25, 99);
+}
+
+.bouton_ajout {
+    background-color: rgb(31, 163, 31);
+    color: white;
+    border: 1px solid rgb(31, 163, 31);
+    border-radius: 5%;
+    font-size: 20px;
+    font-family: 'Tahoma', sans-serif;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.bouton_ajout:hover{
+    background-color: rgb(41, 207, 41);
+    border: 1px solid rgb(41, 207, 41);
+}
+
+.bouton_ajout:visited{
+    color: white;
+}
+
+.bouton_suppr {
+    background-color: rgb(218, 28, 28);
+    color: white;
+    border: 1px solid rgb(218, 28, 28);
+    border-radius: 5%;
+    font-size: 15px;
+    font-family: 'Tahoma', sans-serif;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.bouton_suppr:hover{
+    background-color: rgb(250, 24, 24);
+    border: 1px solid rgb(250, 24, 24);
+}
+
+.bouton_suppr:visited{
+    color: white;
+}
+
+.bouton_modif {
+    background-color: rgb(14, 82, 172);
+    color: white;
+    border: 1px solid rgb(14, 82, 172);
+    border-radius: 5%;
+    font-size: 15px;
+    font-family: 'Tahoma', sans-serif;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.bouton_modif:hover{
+    background-color: rgb(19, 112, 235);
+    border: 1px solid rgb(19, 112, 235);
+}
+
+.bouton_modif:visited{
+    color: white;
+}
+
+.bouton_recherche{
+    background-color: rgb(17, 17, 17);
+    color: white;
+    border: 1px solid rgb(17, 17, 17);
+    border-radius: 5%;
+    font-size: 15px;
+    font-family: 'Tahoma', sans-serif;
+    padding: 10px 25px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.bouton_recherche:hover{
+    background-color: rgb(77, 77, 77);
+    border: 1px solid rgb(77, 77, 77);
+}
+
+.bouton_recherche:visited{
+    color: white;
+}
+
+
+
+.texte {
+    font-family: sans-serif;
+    font-size: 15px;
+    padding: 0.5px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.texte_reussite {
+    background-color: rgb(230, 230, 230);
+    color: green;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    display: inline-block;
+}
+
+.texte_echec {
+    background-color: rgb(230, 230, 230);
+    color: rgb(211, 14, 14);
+    border: 1px solid #000;
+    padding: 10px 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    display: inline-block;
+}
+
+table {
+    text-align: center;
+    border: none;
+    font-family: sans-serif;
+    font-size: 13px;
+    border-radius: 2px;
+    padding: 2px;
+}
+
+td{
+    background-color: #e8f083;
+    text-align: center;
+    border: none;
+    font-family: sans-serif;
+    font-size: 13px;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+th{
+    background-color: rgb(26, 37, 37);
+    color:white;
+    text-align: center;
+    border: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    padding: 3px 10px;
+}
+
+input[type=text],input[type=date], input[type=password], input[type=email], select {
+    width: 18.5%;
+    padding: 12px 20px;
+    margin: 4px;
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#btn_deconn {
+    padding: 11px 20px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size:12px;
+    text-decoration: none;
+    display: inline-block;
+    border: 4px solid #f3f1f1;
+}
+
+#btn_deconn:hover {
+    background-color: #e2233c;
+    font-weight: bold;
+    color:white;
+    border: 4px solid #e2233c;
+}
+
+
+#btn_conn {
+    padding: 11px 20px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size:12px;
+    text-decoration: none;
+    display: inline-block;
+    border: 4px solid #f3f1f1;
+}
+
+#btn_conn:hover {
+    background-color: #23a765;
+    font-weight: bold;
+    border: 4px solid #23a765;
+}
+
+
+
+textarea {
+    resize: none;
+    width: 50%;
+    padding: 12px 20px;
+    margin: 2px 0;
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+header{
+    padding: 10px;
+}
+
+.footer { 
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+
+
+/*BARRE DE NAVIGATION*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    font-family: "Helvetica", sans-serif;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #78ada9;
+    font-weight: bold;
+}
+
+.active {
+    background-color: #1fc2b4;
+    font-weight: bold;
+}
+
+#btn_deconn{
+    text-decoration: none;
+
+}
+
+#form{
+    background-color: lightblue;
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding: 25px;
+    width: 50%;
+    margin: 0 auto;
+    block-size: auto;
+    display: block;
+}
+
+#form_connexion{
+    text-align: center;
+    background-color: rgb(186, 188, 189);
+    border: 1px solid #000;
+    padding: 25px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#voiture_box{
+    text-align: center;
+    background-color: rgb(186, 188, 189);
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding: 10px;
+    width: 25%;
+    margin: 0 auto;
+    block-size: auto;
+    display: block;
+}
+
+#barre_recherche{
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    block-size: auto;
+    display: block;
+}
+
+#a_propos{
+    text-align: center;
+    padding: 25px;
+    width: 50%;
+    margin: 0 auto;
+}
