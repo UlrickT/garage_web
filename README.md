@@ -5,3 +5,5 @@ Pour l'instant, il est impossible de créer des comptes utilisateurs depuis l'in
 Il faut les créer manuellement depuis phpmyadmin.
 
 Voici le lien vers le site en ligne : https://garage.utuamasaga.com/
+
+Voir la documentation utilisateur : https://www.utuamasaga.com/wp-content/uploads/2024/10/Documentation-utilisateur-garage-web.pdf
