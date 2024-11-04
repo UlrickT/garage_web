@@ -56,7 +56,7 @@
                 $nbChevFisc=$_POST['nbChevFisc'];
                 $descVoiture=$_POST['descVoiture'];
                 
-                $sql = "UPDATE `voiture` INNER JOIN `upload` ON voiture.id_voiture = upload.id_image SET 
+                $sql = "UPDATE `voiture` INNER JOIN `upload` ON voiture.id_voiture = upload.id_voiture SET 
                 `marque_voiture`='$marqueVoiture',
                 `modele_voiture`='$modeleVoiture',
                 `couleur_voiture`='$couleurVoiture',
@@ -66,7 +66,7 @@
                 `date_prem_circu`='$datPremCirc',
                 `date_rentree_garage`='$datGarage',
                 `nb_chev_fisc`='$nbChevFisc',
-                `description`='$descVoiture' WHERE id_voiture=$id;";
+                `description`='$descVoiture' WHERE voiture.id_voiture=$id;";
 
                 $connexion->query($sql); 
                 if(!$connexion->error){echo '<p class="texte_reussite">Les informations du véhicule ont été modifiées de la base de données</p><br>';}

@@ -10,10 +10,10 @@
 
 <body>
     <header>
-        <h1><a class="titre_site" href="../">Site web Garage</a><h1>
+        <h1><a class="titre_site" href="../garage_web/">Site web Garage</a><h1>
     </header>
     <ul>
-        <li><a class="active" href="../garage_web/">Accueil</a></li>
+        <li><a class="active" href="../garage_site/">Accueil</a></li>
         <li><a href="vehicules/all/affich_voiture.php">Voir tous les véhicules</a></li>
         <li><a href="vehicules/search/recherche.php">Rechercher un véhicule</a></li>
         <li><a href="contact/contact.php">Contact</a></li>
@@ -37,7 +37,7 @@
     <?php
         include "connexion.php";
         
-        $sql = "SELECT * FROM voiture INNER JOIN upload ON voiture.id_voiture = upload.id_image ORDER BY id_voiture DESC;";
+        $sql = "SELECT voiture.*, upload.image FROM voiture INNER JOIN upload ON voiture.id_voiture = upload.id_image ORDER BY voiture.id_voiture DESC;";
 
         $listeVoiture = $connexion->query($sql);
 
@@ -78,7 +78,6 @@
             echo "Liste des véhicules ".$saisie."<br><br>";
     
             $sql = "SELECT * FROM voiture INNER JOIN upload ON voiture.id_voiture = upload.id_image WHERE marque_voiture = '$saisie';";
-            //echo $sql;
     
             echo '<table border="0">';
             $listeVoiture = $connexion->query($sql);
@@ -88,7 +87,7 @@
                 echo '<img src="../admin/images/img/'.$voiture['image'].'"width="150" height="100" style="float:left">';
                 echo $voiture['marque_voiture']." ". $voiture['modele_voiture']."<br>";
                 echo 'Prix : '.$voiture['prix_voiture'].' Francs CFP '."<br>";
-                echo 'Kilométrage : '.$voiture['km_voiture']." km<br>";
+                echo 'KilomÃ©trage : '.$voiture['km_voiture']." km<br>";
                 echo 'Date mise au garage : '.$voiture['date_rentree_garage']."<br>";
                 echo "<a href='../afficher_voiture/voiture_info.php?id=".$voiture['id_voiture']."'>En savoir plus</a><br><br>";
                 echo '</div><br>';

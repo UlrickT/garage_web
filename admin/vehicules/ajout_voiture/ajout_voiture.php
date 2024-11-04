@@ -40,8 +40,6 @@
         include "../../../connexion.php";
 
         if (isset($_POST['submit'])){
-
-            include "../../../vehicules/images/upload_image.php";
                         
             $marqueVoiture=$_POST['marqueVoiture'];
             $modeleVoiture=$_POST['modeleVoiture'];
@@ -59,10 +57,12 @@
             VALUES ('$marqueVoiture','$modeleVoiture','$carburantVoiture', '$couleurVoiture','$immatVoiture','$prixVoiture','$kmVoiture','$datPremCirc','$datGarage','$nbChevFisc','$descVoiture');";
     
             //echo $sql;
-    
-            $connexion->query($sql); 
+            
+            $connexion->query($sql);
             if(!$connexion->error){echo '<p class="texte_reussite">La voiture a bien été enregistré dans la base de données</p><br>';}
             mysqli_close($connexion);
+
+            include "../../../vehicules/images/upload_image.php";
         }
 
         ?>

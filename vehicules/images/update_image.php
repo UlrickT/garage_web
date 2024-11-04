@@ -21,8 +21,6 @@
             $sql = "UPDATE upload SET `image`='$newImgName' WHERE id_image=$id;";
 
             $connexion->query($sql);
-
-            /*if(!$connexion->error){echo '<p class="texte_reussite">L\'image a été ajouté dans la base de données</p><br>';}*/
             
         }
       

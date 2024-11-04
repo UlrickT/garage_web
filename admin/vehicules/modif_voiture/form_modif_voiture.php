@@ -190,7 +190,7 @@
                 <p>Image actuelle</p>
                 <img src ="<?php
                 $id = $_GET['id'];
-                $sql = "SELECT image FROM upload INNER JOIN voiture ON upload.id_image = voiture.id_voiture WHERE id_voiture=$id;";
+                $sql = "SELECT voiture.*, upload.image FROM voiture INNER JOIN upload ON voiture.id_voiture = upload.id_image WHERE voiture.id_voiture=$id;";
                 $recup = $connexion->query($sql);
                 $valeur = $recup->fetch_assoc();
                 $image = $valeur['image'];
@@ -204,7 +204,7 @@
             <label class="texte">Ajouter une description (256 caractères max): </label><br>
             <textarea name="descVoiture" maxlength="256" cols="20" rows="5"><?php include "../../../connexion.php";
             $id = $_GET['id'];
-            $sql = "SELECT `description` FROM voiture WHERE id_voiture= $id;";
+            $sql = "SELECT description FROM voiture WHERE voiture.id_voiture= $id;";
             $recup = $connexion->query($sql);
             $valeur = $recup->fetch_assoc();
             echo $valeur['description'];?></textarea><br><br>

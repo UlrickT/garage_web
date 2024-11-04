@@ -1,5 +1,5 @@
 <?php
-    session_start();
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -16,7 +16,7 @@
 
     <header>
         <h1><a class="titre_site" href="../">Site web Garage</a><h1>
-        
+
     </header>
     <ul>
         <li><a href="../">Accueil</a></li>
@@ -25,7 +25,7 @@
         <li><a href="../contact/contact.php">Contact</a></li>
         <li><a class="active" href="a_propos.php">A propos</a></li>
         <li style="float:right">
-            <form action="a_propos.php" method="post" >
+            <form action="a_propos.php" method="post">
                 <input id="btn_conn" type="submit" name="connexion" value="Se connecter">
             </form>
         </li>
@@ -36,23 +36,23 @@
     <div id="a_propos">
         <p class="texte">Ce site web répertorie tous les véhicules proposés par le garage</p>
     </div>
-    
+
 
     <br><br>
 
     <div class="footer">
         Copyright 2024
     </div>
-    
+
 
 </body>
 
 </html>
 
 <?php
-    
-    if (isset($_POST['connexion'])){
-        header("Location: ../admin/login.php");
-    }  
+
+if (isset($_POST['connexion'])) {
+    header("Location: ../admin/login.php");
+}
 
 ?>

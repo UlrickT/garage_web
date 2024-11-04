@@ -1,5 +1,5 @@
 <?php
-    session_start();
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -11,9 +11,11 @@
     <title>Site web Garage - Ajouter un véhicule</title>
     <link rel="stylesheet" href="../../../styles.css">
 </head>
+
 <body>
     <header>
-        <h1><a class="titre_site" href="../../">Site web Garage - Administrateur<?php echo " ".$_SESSION['username']?></a><h1>
+        <h1><a class="titre_site" href="../../">Site web Garage - Administrateur<?php echo " " . $_SESSION['username'] ?></a>
+            <h1>
     </header>
     <ul>
         <li><a href="../../">Accueil</a></li>
@@ -23,11 +25,11 @@
         <li><a href="../all/affich_voiture.php">Voir tous les véhicules</a></li>
         <li><a href="../search/recherche.php">Rechercher un véhicule</a></li>
         <li style="float:right">
-            <form action="../../index.php" method="post" >
+            <form action="../../index.php" method="post">
                 <input id="btn_deconn" type="submit" onclick="return confirmDeconn();" name="deconnexion" value="Déconnexion">
 
                 <script>
-                    function confirmDeconn(){
+                    function confirmDeconn() {
                         return window.confirm("Voulez-vous vous déconnecter ?");
                     }
                 </script>
@@ -130,8 +132,8 @@
 </html>
 
 <?php
-    if (isset($_POST['deconnexion'])){
-        session_destroy();
-        header("Location: ../../login.php");
-    }
+if (isset($_POST['deconnexion'])) {
+    session_destroy();
+    header("Location: ../../login.php");
+}
 ?>

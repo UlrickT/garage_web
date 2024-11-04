@@ -64,7 +64,7 @@
         $saisie = $_POST['saisie'];
 
         if (isset($_POST['rechercher'])){   
-            $sql = "SELECT * FROM voiture INNER JOIN upload ON voiture.id_voiture = upload.id_image WHERE marque_voiture = '$saisie';";
+            $sql = "SELECT voiture.*, upload.image FROM voiture INNER JOIN upload ON voiture.id_voiture = upload.id_image WHERE voiture.marque_voiture = '$saisie';";
             //echo $sql;
             
             echo '<table border="0">';
@@ -86,7 +86,7 @@
         }
     }
     else{
-        $sql = "SELECT * FROM voiture INNER JOIN upload ON voiture.id_voiture = upload.id_image ORDER BY id_voiture DESC;";
+        $sql = "SELECT voiture.*, upload.image FROM voiture INNER JOIN upload ON voiture.id_voiture = upload.id_image ORDER BY voiture.id_voiture DESC;";
         //echo $sql;
         
         echo '<table border="0">';

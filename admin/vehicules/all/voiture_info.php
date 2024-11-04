@@ -43,7 +43,7 @@
     include "../../../connexion.php";
 
     $id = $_GET['id'];
-    $sql = "SELECT * FROM voiture INNER JOIN upload ON voiture.id_voiture = upload.id_image WHERE id_voiture='$id';";
+    $sql = "SELECT voiture.*, upload.image FROM voiture INNER JOIN upload ON voiture.id_voiture = upload.id_image WHERE voiture.id_voiture='$id';";
     //echo $sql;
 
     echo '<table border="0">';

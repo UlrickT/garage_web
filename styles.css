@@ -1,11 +1,11 @@
-html{
+html {
     height: 100%;
 }
 
-body{
+body {
     position: relative;
     margin: 0;
-    min-height:100%;
+    min-height: 100%;
 }
 
 .titre {
@@ -15,16 +15,16 @@ body{
 }
 
 .titre_site {
-    color:rgb(95, 165, 187);
+    color: rgb(95, 165, 187);
     text-align: left;
     text-decoration: none;
     font-family: "Helvetica", sans-serif;
     font-size: 40px;
-    display:block;
+    display: block;
 }
 
 .titre_site:visited {
-    color:rgb(95, 165, 187);
+    color: rgb(95, 165, 187);
 }
 
 .description {
@@ -44,11 +44,11 @@ body{
 /*BOUTONS - LIENS HTML*/
 .bouton {
     background-color: rgb(255, 255, 255);
-    color:rgb(12, 25, 99);
+    color: rgb(12, 25, 99);
     border: 1px solid #000;
     font-size: 20px;
     font-family: 'Tahoma', sans-serif;
-    font-weight: lighter ;
+    font-weight: lighter;
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
@@ -62,8 +62,8 @@ body{
     font-weight: bold;
 }
 
-.bouton:visited{
-    color:rgb(12, 25, 99);
+.bouton:visited {
+    color: rgb(12, 25, 99);
 }
 
 .bouton_ajout {
@@ -80,12 +80,12 @@ body{
     box-sizing: border-box;
 }
 
-.bouton_ajout:hover{
+.bouton_ajout:hover {
     background-color: rgb(41, 207, 41);
     border: 1px solid rgb(41, 207, 41);
 }
 
-.bouton_ajout:visited{
+.bouton_ajout:visited {
     color: white;
 }
 
@@ -101,12 +101,12 @@ body{
     display: inline-block;
 }
 
-.bouton_suppr:hover{
+.bouton_suppr:hover {
     background-color: rgb(250, 24, 24);
     border: 1px solid rgb(250, 24, 24);
 }
 
-.bouton_suppr:visited{
+.bouton_suppr:visited {
     color: white;
 }
 
@@ -122,16 +122,16 @@ body{
     display: inline-block;
 }
 
-.bouton_modif:hover{
+.bouton_modif:hover {
     background-color: rgb(19, 112, 235);
     border: 1px solid rgb(19, 112, 235);
 }
 
-.bouton_modif:visited{
+.bouton_modif:visited {
     color: white;
 }
 
-.bouton_recherche{
+.bouton_recherche {
     background-color: rgb(17, 17, 17);
     color: white;
     border: 1px solid rgb(17, 17, 17);
@@ -143,12 +143,12 @@ body{
     display: inline-block;
 }
 
-.bouton_recherche:hover{
+.bouton_recherche:hover {
     background-color: rgb(77, 77, 77);
     border: 1px solid rgb(77, 77, 77);
 }
 
-.bouton_recherche:visited{
+.bouton_recherche:visited {
     color: white;
 }
 
@@ -194,7 +194,7 @@ table {
     padding: 2px;
 }
 
-td{
+td {
     background-color: #e8f083;
     text-align: center;
     border: none;
@@ -204,9 +204,9 @@ td{
     padding: 3px;
 }
 
-th{
+th {
     background-color: rgb(26, 37, 37);
-    color:white;
+    color: white;
     text-align: center;
     border: none;
     font-family: sans-serif;
@@ -214,7 +214,11 @@ th{
     padding: 3px 10px;
 }
 
-input[type=text],input[type=date], input[type=password], input[type=email], select {
+input[type=text],
+input[type=date],
+input[type=password],
+input[type=email],
+select {
     width: 18.5%;
     padding: 12px 20px;
     margin: 4px;
@@ -227,7 +231,7 @@ input[type=text],input[type=date], input[type=password], input[type=email], sele
 #btn_deconn {
     padding: 11px 20px;
     font-family: 'Trebuchet MS', sans-serif;
-    font-size:12px;
+    font-size: 12px;
     text-decoration: none;
     display: inline-block;
     border: 4px solid #f3f1f1;
@@ -236,7 +240,7 @@ input[type=text],input[type=date], input[type=password], input[type=email], sele
 #btn_deconn:hover {
     background-color: #e2233c;
     font-weight: bold;
-    color:white;
+    color: white;
     border: 4px solid #e2233c;
 }
 
@@ -244,7 +248,7 @@ input[type=text],input[type=date], input[type=password], input[type=email], sele
 #btn_conn {
     padding: 11px 20px;
     font-family: 'Trebuchet MS', sans-serif;
-    font-size:12px;
+    font-size: 12px;
     text-decoration: none;
     display: inline-block;
     border: 4px solid #f3f1f1;
@@ -269,11 +273,11 @@ textarea {
     box-sizing: border-box;
 }
 
-header{
+header {
     padding: 10px;
 }
 
-.footer { 
+.footer {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -294,11 +298,11 @@ ul {
     background-color: #333;
     font-family: "Helvetica", sans-serif;
 }
-  
+
 li {
     float: left;
 }
-  
+
 li a {
     display: block;
     color: white;
@@ -317,12 +321,12 @@ li a:hover {
     font-weight: bold;
 }
 
-#btn_deconn{
+#btn_deconn {
     text-decoration: none;
 
 }
 
-#form{
+#form {
     background-color: lightblue;
     border: 1px solid #000;
     border-radius: 4px;
@@ -333,7 +337,7 @@ li a:hover {
     display: block;
 }
 
-#form_connexion{
+#form_connexion {
     text-align: center;
     background-color: rgb(186, 188, 189);
     border: 1px solid #000;
@@ -342,7 +346,7 @@ li a:hover {
     margin: 0 auto;
 }
 
-#voiture_box{
+#voiture_box {
     text-align: center;
     background-color: rgb(186, 188, 189);
     border: 1px solid #000;
@@ -354,7 +358,7 @@ li a:hover {
     display: block;
 }
 
-#barre_recherche{
+#barre_recherche {
     text-align: center;
     padding: 10px;
     margin: 0 auto;
@@ -362,7 +366,7 @@ li a:hover {
     display: block;
 }
 
-#a_propos{
+#a_propos {
     text-align: center;
     padding: 25px;
     width: 50%;
